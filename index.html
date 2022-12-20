@@ -86,36 +86,7 @@
       text-decoration: none !important;
     }
 
-    @media (min-width: 1200px) {
-      .container {
-        width: 1200px;
-      }
-    }
-
-    @media (min-width: 992px) {
-      .container {
-        width: 992px;
-      }
-    }
-
-    @media (min-width: 768px) {
-      .container {
-        width: 768px;
-      }
-      .logo {
-        background: url("flower_logo.png") no-repeat right;
-        width: 654px;
-        height: 194px;
-        margin: 100px auto;
-        font-family: "Gugi", cursive;
-        text-align: left;
-        font-size: 80px;
-        letter-spacing: 1.6px;
-        background-size: auto auto;
-      }
-    }
-
-    @media (min-width: 576px) {
+    @media (min-width: 0px) and (max-width: 576px) {
       .container {
         width: 576px;
       }
@@ -150,6 +121,32 @@
         text-decoration: none !important;
       }
     }
+    @media (min-width: 576px) and (max-width: 768px) {
+      .container {
+        width: 768px;
+      }
+      .logo {
+        background: url("flower_logo.png") no-repeat right;
+        width: 654px;
+        height: 194px;
+        margin: 100px auto;
+        font-family: "Gugi", cursive;
+        text-align: left;
+        font-size: 80px;
+        letter-spacing: 1.6px;
+        background-size: auto auto;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 992px) {
+      .container {
+        width: 992px;
+      }
+    }
+    @media (min-width: 992px) and (max-width: 1200px) {
+      .container {
+        width: 1200px;
+      }
+    }
   </style>
   <body>
     <div class="container">
@@ -178,7 +175,7 @@
       </div>
       <div class="footer">
         Phone: <a href="tel:+972547237171">+972547237171</a> <br />
-        <span>Webflower Digital studio</span>, Israel 2022. All rights reserved 01
+        <span>Webflower Digital studio</span>, Israel 2022. All rights reserved
       </div>
     </div>
   </body>
