@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gugi&display=swap"
+      rel="stylesheet"
+    />
     <title>Webflower</title>
   </head>
   <style>
@@ -13,41 +19,163 @@
       margin: 0;
     }
     html {
-      height: 100%;
       font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
         Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
       font-size: 36px;
+      direction: rtl;
     }
     body {
-      background: #fffdbd;
+      background: #f4ebe4;
       height: 100%;
       font-weight: 600;
+      text-align: center;
     }
-    main {
-      cursor: default;
-      height: 200px;
-      width: 60%;
+
+    .container {
       margin: 0 auto;
+    }
+
+    .recent_sites h2 {
+      font-size: 32px;
+      margin-bottom: 50px;
+    }
+    .recent_sites_examples {
       display: flex;
       justify-content: center;
-      align-items: center;
-      resize: both;
-      overflow: auto;
-      height: 100%;
+      gap: 50px;
     }
-    main div {
-      // overflow: auto;
-      // text-align: center;
+
+    .site {
+      border: 1px solid #000;
+      padding: 5px;
+      transition: 0.5s;
+    }
+    .site:hover {
+      border: 1px solid #e14b19;
+    }
+
+    .site img {
+      width: 200px;
+    }
+
+    .flowers {
+      background: url("flowers.png");
+      width: 62px;
+      height: 70px;
+      background-size: cover;
+      margin: 0 auto 25px auto;
+    }
+    .tel {
+      background: url("tel.png") no-repeat;
+      display: inline-block;
+      padding-left: 50px;
+      margin-top: 25px;
     }
     .contact {
-      font-size:20px;
-      padding-left:13px;
+      margin-bottom: 80px;
+    }
+
+    .footer {
+      text-align: left;
+      font-size: 18px;
+      line-height: 24px;
+      margin: 25px 10px;
+    }
+    .footer a {
+      color: #e14b19;
+      text-decoration: none !important;
+    }
+    @media (min-width: 576px) {
+      .container {
+        width: 576px;
+      }
+      .logo {
+        background: url("flower_logo.png") no-repeat right;
+        width: 327px;
+        height: 97px;
+        margin: 25px auto 75px;
+        font-family: "Gugi", cursive;
+        text-align: left;
+        font-size: 40px;
+        letter-spacing: 1.6px;
+        background-size: 52px 92px;
+        display: flex;
+        cursor: default;
+      }
+      .recent_sites h2 {
+        font-size: 26px;
+        margin-bottom: 25px;
+      }
+      .recent_sites {
+        margin-bottom: 50px;
+      }
+      .tel {
+        font-size: 32px;
+      }
+      .contact {
+        font-size: 30px;
+      }
+      .contact a {
+        color: #000 !important;
+        text-decoration: none !important;
+      }
+    }
+    @media (min-width: 768px) {
+      .container {
+        width: 768px;
+      }
+      .logo {
+        background: url("flower_logo.png") no-repeat right;
+        width: 654px;
+        height: 194px;
+        margin: 100px auto;
+        font-family: "Gugi", cursive;
+        text-align: left;
+        font-size: 80px;
+        letter-spacing: 1.6px;
+        background-size: auto auto;
+      }
+    }
+    @media (min-width: 992px) {
+      .container {
+        width: 992px;
+      }
+    }
+    @media (min-width: 1200px) {
+      .container {
+        width: 1200px;
+      }
     }
   </style>
   <body>
-    <main>
-      <div>Webflower&nbsp;🌻</div>
-      <!--div class="contact">054-7237171</div-->
-    </main>
+    <div class="container">
+      <div class="logo">Webflower Digital Studio</div>
+      <div class="recent_sites">
+        <h2>אתרים שבנינו לאחרונה:</h2>
+        <div class="recent_sites_examples">
+          <a
+            href="http://www.arinainterior.co.il"
+            class="site arina"
+            target="_blank"
+            ><img src="arina.png"
+          /></a>
+          <a
+            href="http://www.abrahamkron.com"
+            class="site abraham"
+            target="_blank"
+            ><img src="abraham.png"
+          /></a>
+        </div>
+      </div>
+      <div class="flowers"></div>
+      <div class="contact">
+        גם אתם צריכים אתר? <br />דברו איתנו :)<br />
+        <a href="tel:+972547237171" class="tel">054-7237171</a>
+      </div>
+      <div class="footer">
+        Phone: <a href="tel:+972547237171">+972547237171</a> <br />
+        <span>Webflower Digital studio</span>, Israel 2022. All rights reserved
+      </div>
+    </div>
   </body>
 </html>
