@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Gugi&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gugi&display=swap"
+      rel="stylesheet"
+    />
     <title>Webflower</title>
   </head>
   <!-- Google tag (gtag.js) -->
@@ -24,10 +28,8 @@
       dataLayer.push(arguments);
     }
     gtag("js", new Date());
-
     gtag("config", "G-M6QDQZBMZM");
   </script>
-
   <style>
     * {
       padding: 0;
@@ -44,26 +46,21 @@
       height: 100%;
       font-weight: 600;
       text-align: center;
+      font-family: "Varela Round", cursive;
     }
-
     .container {
       margin: 0 auto;
       width: 768px;
     }
-
-    .recent_sites {
-      margin-bottom: 50px;
-    }
     .recent_sites h2 {
-      font-size: 32px;
-      margin-bottom: 50px;
+      font-size: 34px;
+      margin-bottom: 25px;
     }
     .recent_sites_examples {
       display: flex;
       justify-content: center;
       gap: 50px;
     }
-
     .site {
       border: 1px solid #000;
       padding: 5px;
@@ -72,11 +69,14 @@
     .site:hover {
       border: 1px solid #e14b19;
     }
-
-    .site img {
-      width: 200px;
+    .site.arina img {
+      width: 125px;
+      padding: 15px 25px 15px 25px;
     }
-
+    .site.abraham img {
+      width: 125px;
+      padding: 20px 25px 0px 25px;
+    }
     .flowers {
       background: url("flowers.png");
       width: 62px;
@@ -85,37 +85,52 @@
       margin: 0 auto 25px auto;
     }
     .tel {
-      background: url("tel.png") no-repeat;
+      background: url("tel.png") no-repeat left center;
+      background-size: 40px 40px;
       display: inline-block;
       padding-left: 50px;
-      margin-top: 25px;
     }
     .contact {
       margin-bottom: 80px;
+      line-height: 50px;
     }
-
     .footer {
       font-size: 18px;
-      line-height: 24px;
+      line-height: 28px;
       margin: 25px 10px;
       direction: ltr;
+      text-align: left;
+    }
+    .footer a {
+      color: #e14b19 !important;
     }
     .contact a {
-      color: #e14b19;
+      color: #000;
+      font-size: 30px;
+      padding: 4px 0 0 50px;
       text-decoration: none !important;
+    }
+    .logo_container {
+      display: flex;
+      justify-content: left;
     }
     .logo {
       background: url("flower_logo.png") no-repeat right;
       width: 654px;
       height: 194px;
-      margin: 100px auto;
+      margin: 75px 0;
       font-family: "Gugi", cursive;
       text-align: left;
       font-size: 80px;
       letter-spacing: 1.6px;
       background-size: auto auto;
     }
-
+    .experts {
+      margin-bottom: 25px;
+    }
+    .recent_sites_examples {
+      margin-bottom: 35px;
+    }
     @media only screen and (max-width: 770px) {
       .container {
         width: auto;
@@ -130,12 +145,10 @@
         font-size: 40px;
         letter-spacing: 1.6px;
         background-size: 52px 92px;
-        display: flex;
         cursor: default;
       }
       .recent_sites h2 {
         font-size: 26px;
-        margin-bottom: 25px;
       }
       .recent_sites {
         margin-bottom: 50px;
@@ -156,9 +169,16 @@
   </style>
   <body>
     <div class="container">
-      <div class="logo">Webflower Digital Studio</div>
+      <div class="logo_container">
+        <div class="logo">Webflower Digital Studio</div>
+      </div>
+      <div class="experts">
+        אנחנו מומחי וובפלואו |
+        <span>Webflow</span>
+      </div>
+      <div class="flowers"></div>
       <div class="recent_sites">
-        <h2>אתרים שבנינו לאחרונה:</h2>
+        <h2>אתרים שבנינו לאחרונה</h2>
         <div class="recent_sites_examples">
           <a
             href="http://www.arinainterior.co.il"
@@ -176,11 +196,13 @@
       </div>
       <div class="flowers"></div>
       <div class="contact">
-        גם אתם צריכים אתר? <br />דברו איתנו :)<br />
+        <div>גם אתם צריכים אתר? <br />דברו איתנו.</div>
         <a href="tel:+972547237171" class="tel">054-7237171</a>
       </div>
       <div class="footer">
-        <span>Webflower Digital Studio ©</span> Israel 2022.
+        Phone: <a href="tel:+972547237171">+972547237171</a><br />
+        Webflower Digital Studio, Israel 2022. בניה ועיצוב אתרים All rights
+        reserved.
       </div>
     </div>
   </body>
